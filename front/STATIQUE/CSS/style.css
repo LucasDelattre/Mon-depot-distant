@@ -1,0 +1,75 @@
+html{
+    font-size: 100%;
+}
+
+nav{
+    background-color: black;
+    max-width: 100%;
+    height: 70px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+a{
+    flex-direction: column-reverse;
+    color:white;
+}
+
+li{
+    display: inline;
+   
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#uuu{
+    margin-left: 30%;
+}
+
+#logo_jarditou{
+    margin: 5px;
+}
+
+#colonne_droite{
+    background-color: grey;
+    width: 40%;
+ }
+
+#text{
+    width: 100%;
+}
+
+#corp{
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+    margin-bottom: 0.3rem;
+}
+#corp_tableau{
+    display:flex
+}
+
+
+@media screen and (max-width: 768px)
+{
+    #colonne_droite{
+        display: none;
+    }
+    a{
+        display: block;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    #uuu{
+        display: none;
+    }
+    #corp_tableau{
+        width: 100%;
+        overflow: auto;
+    }
+}

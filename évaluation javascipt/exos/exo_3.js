@@ -1,6 +1,6 @@
 var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
 
-var prenom=prompt("entrez un prenom entre: " + tab.join('/'));//demande d'écrire un des prénoms dans le tableau
+var prenom=prompt("entrez un prénom entre: " + tab.join('/') + " " + "si le prénom est trouver, alors il sera enlever du tableau");//demande d'écrire un des prénoms dans le tableau
 if(tab.includes(prenom))//si le prénom entrer est inclu dans le tableau
 {
     tab.splice(tab.indexOf(prenom),1);

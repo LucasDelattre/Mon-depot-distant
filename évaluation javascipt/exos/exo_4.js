@@ -1,5 +1,6 @@
-var PU=parseInt(prompt("prix de l'objet"));
-var QTECOM=parseInt(prompt("nombre d'objet"));
+alert("Vous passez à la caisse")
+var PU=parseInt(prompt("Veuillez scanner le prix de l'objet"));
+var QTECOM=parseInt(prompt("Veuillez entrer le nombre d'objets"));
 var PAP;
 var REM;
 var PORT;
@@ -33,6 +34,8 @@ else if(TOT >= 300 && TOT <= 500)//quand le total remisé est entre 300 et 500�
     PORT=(TOT*2)/100;
     TOT=TOT+PORT;
     console.log("les frais de port sont de " + PORT);
+    document.write("Les frais de port sont à " + PORT + "€" + "<br>");
+    document.write("Le montant est de " + TOT + "€");
     alert("les frais de port sont de " + PORT );
     alert("le prix à payer est de " + TOT +"€");
 }
@@ -41,6 +44,8 @@ else if(TOT < 300 && TOT > 0)//quand le total remisé est en-dessous de 300€
     PORT=6;
     TOT=TOT+PORT;
     console.log("les frais de port sont à " + PORT + "€");
+    document.write("Les frais de port sont à " + PORT + "€" + "<br>");
+    document.write("Le montant est de " + TOT + "€");
     alert("les frais de port sont à " + PORT + "€");
     alert("le prix à payer est de " + TOT + "€");
 }
@@ -50,5 +55,6 @@ else//quand le total remisé est de 0€
     TOT=TOT+PORT;
     console.log("les frais de port sont à " + PORT + "€");
     alert("les frais de port sont à " + PORT + "€");
-    alert("le prix remisé est de 0€");
+    document.write("Les frais de port sont à " + PORT + "€" + "<br>");
+    document.write("Le montant est de " + TOT + "€");
 }

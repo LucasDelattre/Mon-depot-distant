@@ -1,4 +1,4 @@
-var nb=prompt("entrez un nombre")
+var nb=prompt("entrez un numéro pour afficher sa table de multiplication:")//saisir le numéro pour la multiplication
 nb=parseInt(nb)
 function tb(nb)
 {

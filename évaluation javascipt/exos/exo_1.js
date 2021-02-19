@@ -1,3 +1,4 @@
+function uuu(){
 var age=null;
 var jeune=0;
 var moyen=0;
@@ -5,7 +6,11 @@ var vieux=0;
 while(age < 100)// si l'age est inférieur à 100 ans
 {
     age=parseInt(prompt("entrez votre age pour un sondage, le sondage s'arrete quand l'age est supérieur à 100"))
-    if(age < 20)// si l'age est inférieur à 20 ans
+    if(isNaN(age) == true || age == null || age == undefined){
+        alert("Avez-vous compris la question ?")
+        return uuu();
+    }
+    else if(age < 20)// si l'age est inférieur à 20 ans
     {
         jeune++;
     }
@@ -19,14 +24,14 @@ while(age < 100)// si l'age est inférieur à 100 ans
     }
     else//sinon stop la boucle
     {
-    alert("Vous êtes encore en vie :)");
+    alert("Vous êtes encore en vie :");
     break;   
     }
 }
 console.log("il y a " + jeune + " jeune(s), " + moyen +" moyen(s) et " + vieux + "vieux. ");
 document.write("il y a " + jeune + " jeune(s), " + moyen +" moyen(s) et " + vieux + "vieux. " + "<br>");
-
-
+}
+uuu()
 
  
                                                                                                                                                                                                                                                                                                                                                                                                                                       
